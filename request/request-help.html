@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request help</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="request-help.css">
+</head>
+<body>
+      <header>
+    <div class="logo">BTG</div>
+    <nav>
+      <a href="file:///C:/Users/user/Documents/css/new/BTG.html#">Home</a>
+      <a href="file:///C:/Users/user/Documents/css/new/oppo/oppo.html">Opportunities</a>
+      <a href="file:///C:/Users/user/Documents/css/new/res/resource.html#">Resources</a>
+      <a href="file:///C:/Users/user/Documents/css/new/request/request-help.html">Request help</a>
+      <a href="file:///C:/Users/user/Documents/css/new/New%20folder/contactus.html">Contact</a>
+    </nav>
+  </header>
+  <hr>
+   <section id="request-help" class="section">
+        <h2>Request Help</h2>
+        <form id="help-request-form" 
+        action="https://formspree.io/f/xblgeowa"
+        method="POST"
+      >
+      <p id="response"></p>
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="Enter your Email" required>
+          <label for="helpconecerning">What do you need?</label>
+          <select name="helptype" required>
+            <option value="academic support">academic support</option>
+            <option value="internship">internship</option>
+            <option value="academic resource">academic resource</option>
+            <option value="mental health supprt">Mental Health Support</option>
+          </select>
+  
+          <label for="location">Your Location</label>
+          <input type="text" name="location" placeholder="Enter your city or neighborhood" required>
+          <textarea name="message"></textarea>
+          <button type="submit" class="cta-button">Submit Request</button>
+        </form>
+    </section>
+    
+</body>
+</html>

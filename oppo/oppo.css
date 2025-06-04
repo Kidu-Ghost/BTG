@@ -1,0 +1,184 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #FF57BB, #8F5BFF, #3A8DFF);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    nav a {
+      margin-left: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    .container {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .container p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 40px;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .section h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .section  p {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .section  a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: white;
+      color: #3A8DFF;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #eee;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+}
+/* ===== PHONE RESPONSIVE STYLES ===== */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+
+  .container {
+    padding: 40px 15px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 20px 15px;
+  }
+
+  .section h3 {
+    font-size: 18px;
+  }
+
+  .section p {
+    font-size: 14px;
+  }
+
+  .section a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+/* Extra small phones (under 400px) */
+@media (max-width: 399px) {
+nav a {
+    margin-left: 0;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 30px 10px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 15px;
+  }
+}
